@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Russo+One&display=swap');
+
+body {
+	margin: 0;
+	font-family: Lato, Verdana;
+	#background-color: #f5f5f5;
+}
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+}
+.main {
+	margin-top: 52px;
+}
+.main .container {
+	background-color: #ffffff;
+	border: 1px solid #ffffff;
+}
+.topbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #3b5998;
+	#height: 48px;
+	overflow: hidden;
+	color: #ffffff;
+	#font-size: .9em;
+}
+.topbar .container {
+	box-sizing: border-box;
+	padding: 0 10px;
+}
+.block {
+	margin: 10px;
+}
+.block-heading {
+	border-bottom: 1px solid #dddddd;
+	#margin-bottom: .5em;
+	font-family: 'Russo One';
+	margin: 10px;
+}
+.block-heading-main {
+	font-size: 1.5em;
+	letter-spacing: 110%;
+	color: #3b5998;
+}
+.block-heading-main:first-letter {
+	color: #6081ca;
+}
+.block-heading-aside {
+	float: right;
+}
+.block-main > * {
+	#padding-left: 10px;
+	#padding-right: 10px;
+}
+.mainbar {
+	box-sizing: content-box;
+	padding-right: 300px;
+}
+.sidebar {
+	float: right;
+	width: 300px;
+}
+.clearfix {
+	clear: both;
+}
+.toleft {
+	float: left;
+}
+.toright {
+	float: right;
+}
+.toleft > div, .toright div {
+	display: inline-block;
+	vertical-align: middle;
+}
+.toleft > div {
+	#margin-right: 20px;
+}
+.toright > div {
+	#margin-left: 20px;
+}
+.filler {
+	height: 48px;
+}
+.logo {
+	display: block;
+	width: 115px;
+	height: 25px;
+	background: url(logo.png) no-repeat;
+	background-size: 100%;
+	margin-right: 20px;
+}
+.topbar a {
+	№color: #e7efff;
+	color: #ffffff;
+}
+a {
+	text-decoration: none;
+	color: #3b5998;
+}
+a:hover {
+	text-decoration: underline;
+}
+.navigation a {
+	padding: 16px 12px;
+	#margin-bottom: 2px;
+	display: inline-block;
+	text-shadow: 0 1px #254280;
+}
+.navigation a:hover {
+	background-color: #e7efff22;
+	text-decoration: none;
+}
+.navigation a:first-child {
+}
+.username {
+	font-weight: bold;
+}
+.search input {
+	height: 32px;
+	margin: 0;
+	box-sizing: border-box;
+	border: 2px solid #254280;
+	font-size: inherit;
+	font-family: inherit;
+	vertical-align: middle;
+	background-color: #254280;
+}
+.search input[type="text"] {
+	border-radius: 4px 0 0 4px;
+	#border-right: 2px solid #eeeeee;
+	border-right: none;
+	color: #ffffff;
+}
+.search input[type="submit"] {
+	background: 7px 7px url(search.png) no-repeat;
+	background-size: 16px;
+	padding: 12px;
+	box-sizing: border-box;
+	width: 32px;
+	border-radius: 0 4px 4px 0;	
+	#background-color: #1f335d;
+	background-color: #254280;
+}
+.search input:focus  {
+	background-color: #1f335d;
+}
+
+
+.amount {
+	font-family: 'Russo One';
+	font-size: 36px;
+	padding: 10px;
+}
+
+.commandbutton {
+	display: block;
+	padding: 5px 10px;
+}
+.commandbutton:hover {
+	background-color: #e7efff;
+	text-decoration: none;
+}
+
+.budget-card {
+	display: block;
+	float: left;
+	padding: 10px;
+	box-sizing: border-box;
+	width: 25%;
+}
+
+.budget-card:hover .budget-card-inner {
+	background-color: #f5f5f5;
+	outline-color: #eeeeee;
+}
+
+.budget-card a:hover {
+	text-decoration: none;
+}
+
+.budget-card-inner {
+	width: 100%;
+	height: 75&;
+	#border: 1px solid #efefef;
+	background-color: #fbfbfb;
+	text-align: center;
+	font-weight: bold;
+	outline: 1px solid #efefef;
+}
+.budget-card-inner > * {
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.budget-card-filler {
+	height: 100px;
+}
+
+@media (max-width: 900px) {
+	a.budgets-item {
+		display: none;
+	}
+	
+	.logo {
+		width: 25px;
+		background-size: 120px 25px;
+	}
+	
+	.budget-card {
+		width: 33.33333%;
+	}
+}
+
+@media (max-width: 600px) {
+	.search {
+		width: calc(100% - 42px);
+	}
+	.search input[type="text"] {
+		width: calc(100% - 32px);
+		box-sizing: border-box;
+	}
+	.logo {
+		margin: 5px;
+	}
+	.toleft {
+		width: 100%;
+	}
+	.toright {
+		float: left;
+	}
+	
+	.sidebar {
+		width: 100%;
+	}
+	.mainbar {
+		padding: 0;
+	}
+	
+	.main {
+		margin-top: 103px;
+	}
+	
+	.budget-card {
+		width: 50%;
+	}
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Plansheet | Dashboard</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div class="topbar">
+			<div class="container">
+				<div class="toleft">
+					<div class="logo">
+						<a href="#"></a>
+					</div>
+					<div class="search">
+						<input type="text"><input type="submit" value="">
+					</div>
+					<div class="filler"></div>
+				</div>
+				<div class="toright">
+					<div class="filler"></div>
+					<div class="navigation">
+						<a href="#">Wallet</a>
+						<a href="#" class="budgets-item">Budgets</a>
+						<a href="/settings">Settings</a>
+						<a href="/logout">Log out</a>
+					</div>
+					<!--<div class="username">
+						Денис
+					</div>-->
+					<!--<div class="usermenu navigation">
+					</div>-->
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="container">
+				<div class="sidebar">
+					<div class="block">
+						<div class="block-heading">
+							<div class="block-heading-main">Wallet</div>
+						</div>
+						<div class="block-main">
+							<div class="amount">
+								100 грн.
+							</div>
+							<a class="commandbutton" href="#">Add expense</a>
+							<a class="commandbutton" href="#">Add income</a>
+							<a class="commandbutton" href="#"><center>Go to wallet &raquo;</center></a>
+						</div>
+					</div>
+				</div>
+				<div class="mainbar">
+					
+					<div class="block">
+						<div class="block-heading">
+							<div class="block-heading-main">Budgets</div>
+						</div>
+						<div class="block-main">
+							<a class="budget-card">
+								<div class="budget-card-inner">
+									<div class="budget-card-filler"></div>
+									<span>March 2021</span>
+								</div>
+								1200 грн., 5 left
+							</a>
+							<a class="budget-card">
+								<div class="budget-card-inner">
+									<div class="budget-card-filler"></div>
+									<span>February 2021</span>
+								</div>
+								1345 грн., 10 left
+							</a>
+							<a class="budget-card" href="#">
+								<div class="budget-card-inner">
+									<div class="budget-card-filler"></div>
+									<span>January 2021</span>
+								</div>
+								1200 грн., 0.35 left
+							</a>
+							<a class="budget-card">
+								<div class="budget-card-inner">
+									<div class="budget-card-filler"></div>
+									<span>December 2020</span>
+								</div>
+								1400 грн., 0.40 left
+							</a>
+							<a class="budget-card">
+								<div class="budget-card-inner">
+									<div class="budget-card-filler"></div>
+									<span>November 2020</span>
+								</div>
+								1267 грн., 12 left
+							</a>
+							<a class="budget-card">
+								<div class="budget-card-inner">
+									<div class="budget-card-filler"></div>
+									<span>October 2020</span>
+								</div>
+								1600 грн., 5 left
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+		<script>updateWallet();</script>
+	</body>
+</html>
